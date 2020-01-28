@@ -1,10 +1,10 @@
 {
-  "name": "estructura_api",
+  "name": "maestro_detalle_api",
   "version": "1.0.0",
-  "description": "estructura basica de api",
+  "description": "Maestro detalle API de prueba",
   "main": "index.js",
   "scripts": {
-    "dev":"nodemon index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Erlan Maldonado Correa",

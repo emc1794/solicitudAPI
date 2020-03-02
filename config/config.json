@@ -1,9 +1,9 @@
 {
   "development": {
     "username": "root",
-    "password": "my-secret-pw",
-    "database": "vacacion",
-    "host": "192.168.160.44",
+    "password": "docker",
+    "database": "maestrodetalleapi",
+    "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
   },

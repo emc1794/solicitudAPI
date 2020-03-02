@@ -4,14 +4,20 @@
   "description": "Maestro detalle API de prueba",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
+    "dev": "NODE_ENV=development nodemon index.js",
+    "start": "NODE_ENV=production node index.js",
+    "migrate": "npx sequelize-cli db:migrate",
+    "undo-migrate": "npx sequelize-cli db:migrate:undo:all",
+    "migrate-prod": "npx sequelize-cli db:migrate --env production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Erlan Maldonado Correa",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^3.0.7",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "morgan": "^1.9.1",
     "mysql2": "^1.7.0",
     "sequelize": "^5.19.2",
     "sequelize-cli": "^5.5.1"
